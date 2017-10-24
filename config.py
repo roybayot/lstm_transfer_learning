@@ -40,7 +40,3 @@ W_L2_REG = args.W_L2_REG
 
 
 
-callbacks = [EarlyStopping(monitor='val_loss', patience=3, verbose=1), 
-             ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=2, min_lr=0.001),
-             CSVLogger(csv_filename)
-        ]
